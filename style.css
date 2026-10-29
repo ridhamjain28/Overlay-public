@@ -276,3 +276,30 @@ details p { color: var(--muted); padding-bottom: 18px; margin: 0; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
+
+/* Contact form */
+.contact-card { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 28px; position: relative; }
+.contact-form { display: grid; gap: 8px; }
+.contact-form label { font-weight: 600; font-size: 0.9rem; margin-top: 8px; }
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+  width: 100%; font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm); padding: 12px 14px; transition: border-color .2s, box-shadow .2s;
+}
+.contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.contact-form textarea { resize: vertical; min-height: 120px; }
+.contact-form .btn { margin-top: 14px; justify-self: start; }
+.contact-form .btn[disabled] { opacity: .7; cursor: progress; }
+.form-error { color: #ff8a9b; margin: 6px 0 0; }
+.contact-card.is-sent .contact-form { display: none; }
+.sent { text-align: center; padding: 24px 8px; animation: sentIn .5s ease both; }
+.sent[hidden] { display: none; }
+.sent h3 { margin: 12px 0 4px; }
+.sent p { color: var(--muted); margin: 0 0 18px; }
+.sent-check { width: 72px; height: 72px; }
+.sent-circle { stroke: var(--accent); stroke-width: 3; stroke-dasharray: 151; stroke-dashoffset: 151; animation: sentDraw .6s ease forwards; }
+.sent-tick { stroke: var(--text); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 40; stroke-dashoffset: 40; animation: sentDraw .4s .5s ease forwards; }
+@keyframes sentDraw { to { stroke-dashoffset: 0; } }
+@keyframes sentIn { from { opacity: 0; transform: translateY(10px) scale(.98); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .sent, .sent-circle, .sent-tick { animation: none; stroke-dashoffset: 0; }
+}

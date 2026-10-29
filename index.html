@@ -43,6 +43,7 @@
           <li><a href="#how">How it works</a></li>
           <li><a href="#screens">Screens</a></li>
           <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <a class="btn btn-small btn-ghost" href="https://github.com/ridhamjain28/Overlay-public" target="_blank" rel="noopener">Downloads</a>
@@ -271,6 +272,36 @@
       </div>
     </section>
 
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <h2>Send me a message</h2>
+          <p>Found a bug or have an idea? Tell me and I'll read it.</p>
+        </div>
+        <div class="contact-card reveal">
+          <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="4b3d2042-240d-4366-826f-d1257467b25a">
+            <input type="hidden" name="subject" value="New message from the Overlay website">
+            <input type="checkbox" name="botcheck" class="sr-only" tabindex="-1" autocomplete="off" style="display:none">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" required autocomplete="name">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" required autocomplete="email">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary" id="cf-submit">Send message</button>
+            <p class="form-error" id="cf-error" role="alert" hidden>Something went wrong. Please try again in a moment.</p>
+          </form>
+          <div class="sent" id="cf-sent" role="status" aria-live="polite" hidden>
+            <svg class="sent-check" viewBox="0 0 52 52" aria-hidden="true"><circle class="sent-circle" cx="26" cy="26" r="24" fill="none"/><path class="sent-tick" fill="none" d="M14 27l8 8 16-17"/></svg>
+            <h3>Message sent</h3>
+            <p>Thanks! I'll get back to you soon.</p>
+            <button type="button" class="btn btn-secondary btn-small" id="cf-again">Send another</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="section cta-band">
       <div class="container cta-inner reveal">
         <h2>Try it and tell me what to improve</h2>
@@ -289,7 +320,7 @@
         <img src="assets/logo.svg" alt="" width="24" height="24">
         <span>Overlay</span>
       </div>
-      <p>Made by Ridham Jain. Released under the <a href="https://github.com/ridhamjain28/Overlay-public/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>.</p>
+      <p>Made by <a href="https://ridhamjain28.github.io/" target="_blank" rel="noopener">Ridham Jain</a>. Released under the <a href="https://github.com/ridhamjain28/Overlay-public/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>.</p>
       <p>Built on <a href="https://github.com/OpenWhispr/openwhispr" target="_blank" rel="noopener">OpenWhispr</a> (MIT, Gizmo Labs Inc.).</p>
     </div>
   </footer>

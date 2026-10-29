@@ -87,3 +87,42 @@
     });
   }
 })();
+
+// Contact form: send to Web3Forms without leaving the page, then show a "sent" animation.
+(function () {
+  "use strict";
+  var form = document.getElementById("contact-form");
+  if (!form) return;
+  var card = form.closest(".contact-card");
+  var sent = document.getElementById("cf-sent");
+  var btn = document.getElementById("cf-submit");
+  var err = document.getElementById("cf-error");
+  var again = document.getElementById("cf-again");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    err.hidden = true;
+    btn.disabled = true;
+    var label = btn.textContent;
+    btn.textContent = "Sending\u2026";
+    fetch(form.action, {
+      method: "POST",
+      headers: { "Accept": "application/json" },
+      body: new FormData(form)
+    }).then(function (res) { return res.json().then(function (d) { return { ok: res.ok && d.success, d: d }; }); })
+      .then(function (r) {
+        if (!r.ok) throw new Error("send failed");
+        form.reset();
+        card.classList.add("is-sent");
+        sent.hidden = false;
+      })
+      .catch(function () { err.hidden = false; })
+      .then(function () { btn.disabled = false; btn.textContent = label; });
+  });
+
+  again.addEventListener("click", function () {
+    sent.hidden = true;
+    card.classList.remove("is-sent");
+    document.getElementById("cf-name").focus();
+  });
+})();
