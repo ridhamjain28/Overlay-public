@@ -1,7 +1,7 @@
 # Overlay Windows installer bootstrap
 $ErrorActionPreference = 'Stop'
-$ReleaseTag = 'v0.1.0'
-$AssetName = 'Overlay-Setup-0.1.0.exe'
+$ReleaseTag = 'v0.1.1'
+$AssetName = 'Overlay-Setup-0.1.1.exe'
 $DownloadUrl = "https://github.com/ridhamjain28/Overlay-public/releases/download/$ReleaseTag/$AssetName"
 $OutPath = Join-Path $env:TEMP $AssetName
 
