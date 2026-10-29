@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Overlay: free, local-first voice and typing assistant for Windows</title>
+  <meta name="description" content="Overlay is a free, open-source voice and typing assistant for Windows. Dictate into any app with local Whisper, ask questions and get just the answer in a small overlay, with Hinglish support.">
+  <meta name="theme-color" content="#800020">
+  <meta name="author" content="Ridham Jain">
+
+  <!-- Open Graph / link previews (LinkedIn, Instagram, WhatsApp, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overlay">
+  <meta property="og:title" content="Overlay: talk instead of type, on Windows">
+  <meta property="og:description" content="Free, open-source (MIT) voice and typing assistant. Local Whisper dictation into any app, a voice assistant that shows just the answer, and Hinglish support.">
+  <meta property="og:url" content="https://ridhamjain28.github.io/Overlay-public/">
+  <meta property="og:image" content="https://ridhamjain28.github.io/Overlay-public/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Overlay logo with the tagline: talk instead of type, on Windows">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Overlay: talk instead of type, on Windows">
+  <meta name="twitter:description" content="Free, open-source (MIT) voice and typing assistant. Local Whisper dictation, a voice assistant with sources, and Hinglish support.">
+  <meta name="twitter:image" content="https://ridhamjain28.github.io/Overlay-public/assets/og-image.png">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Overlay home">
+        <img src="assets/logo.svg" alt="" width="32" height="32">
+        <span>Overlay</span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#screens">Screens</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-small btn-ghost" href="https://github.com/ridhamjain28/Overlay-public" target="_blank" rel="noopener">Downloads</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Free and open source &middot; Windows</p>
+          <h1>Talk instead of type.<br><span class="accent">Anywhere on your PC.</span></h1>
+          <p class="lead">Overlay is an always-on-top voice and typing assistant. Press a hotkey to dictate into any app with local Whisper, or ask a question and get just the answer in a small overlay. It understands Hinglish too.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="https://github.com/ridhamjain28/Overlay-public/releases/download/v0.1.0/Overlay-Setup-0.1.0.exe">
+              Download for Windows
+            </a>
+            <a class="btn btn-secondary" href="#start">Install steps</a>
+          </div>
+          <ul class="pills">
+            <li>Local Whisper</li>
+            <li>Hinglish (Roman)</li>
+            <li>MIT licensed</li>
+          </ul>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="logo-glow" aria-hidden="true"></div>
+          <img class="hero-logo" src="assets/logo.svg" alt="Overlay logo: a maroon app icon with sound bars and a speech bubble" width="220" height="220">
+          <div class="mock-overlay" aria-hidden="true">
+            <div class="mock-row"><span class="wave"><i></i><i></i><i></i><i></i><i></i></span><span class="mock-label">Listening&hellip;</span></div>
+            <div class="mock-text">&ldquo;Kal ki meeting 5 baje move kar do&rdquo;</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>What Overlay does</h2>
+          <p>Two hotkeys, one small window, and no subscription.</p>
+        </div>
+        <div class="grid features">
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></div>
+            <h3>Dictation hotkey</h3>
+            <p>Press your shortcut, speak, and your words are typed into whatever app you're using. Speech-to-text runs on your PC with local Whisper, so it stays private and works offline.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/><path d="M9 10h6M9 14h4"/></svg></div>
+            <h3>Assistant hotkey</h3>
+            <p>Ask a question out loud and get just the answer in a small overlay on top of your work. It can search the web and shows its sources.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Safe PC actions</h3>
+            <p>Say things like &ldquo;open Notepad&rdquo; or &ldquo;turn the volume down&rdquo;. Only actions on an allowlist can run, so the assistant can't do anything you haven't allowed.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h9M8.5 3v2M6 5c0 4 3 7 6 8M11 5c-1 4-4 7-7 8"/><path d="m13 21 4-10 4 10M14.5 17h5"/></svg></div>
+            <h3>Hinglish support</h3>
+            <p>Speak the way you actually talk, mixing Hindi and English. Overlay can write it out in Roman script (Hinglish).</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h10M4 17h6M18 7h2M14 17h6"/><circle cx="16" cy="7" r="2"/><circle cx="12" cy="17" r="2"/></svg></div>
+            <h3>Pick your answer source</h3>
+            <p>Use a local Ollama model, an OpenClaw gateway, Gemini with Google Search, or Tavily. Switch whenever you like.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
+            <h3>Free and local-first</h3>
+            <p>Every option is free to use. Wherever possible things run on your own machine, in a clean maroon-themed interface.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section alt" id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>How it works</h2>
+          <p>Set it up once, then it's always one keypress away.</p>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">1</span>
+            <h3>Press your hotkey</h3>
+            <p>Pick a shortcut like <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd>. Hotkeys are tap-to-toggle: tap once to start, tap again to stop.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">2</span>
+            <h3>Speak naturally</h3>
+            <p>English, Hindi, or a mix of both. Whisper turns your voice into text right on your PC.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">3</span>
+            <h3>Get text or an answer</h3>
+            <p>Dictation types the text into your current app. The assistant shows the answer, with sources when it searched the web.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Answer sources -->
+    <section class="section" id="sources">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Choose how it answers</h2>
+          <p>The assistant can get its answers from any of these. All of them have a free way to use them.</p>
+        </div>
+        <div class="grid sources">
+          <article class="card source reveal">
+            <span class="tag">Private</span>
+            <h3>Local Ollama model</h3>
+            <p>Runs a model on your own PC. Free, and your questions don't leave your machine.</p>
+          </article>
+          <article class="card source reveal">
+            <span class="tag">Self-hosted</span>
+            <h3>OpenClaw gateway</h3>
+            <p>Point Overlay at your own OpenClaw gateway and use whatever it's set up to answer with.</p>
+          </article>
+          <article class="card source reveal">
+            <span class="tag">Web search</span>
+            <h3>Gemini + Google Search</h3>
+            <p>Use Gemini with Google Search grounding for up-to-date answers with sources.</p>
+          </article>
+          <article class="card source reveal">
+            <span class="tag">Web search</span>
+            <h3>Tavily</h3>
+            <p>A search API built for AI answers, for fresh results with links.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="section alt" id="screens">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Setup screens</h2>
+          <p>A look at Overlay's first-run setup. Tap a screen to see it larger. (Hotkeys shown are examples; use tap-to-toggle on Windows.)</p>
+        </div>
+        <div class="gallery">
+          <figure class="shot reveal">
+            <button type="button" class="shot-btn" data-full="assets/setup-welcome.jpg" aria-label="Enlarge: Set up Overlay in 3 minutes">
+              <img src="assets/setup-welcome.jpg" loading="lazy" width="800" height="896" alt="Overlay setup screen titled 'Set up Overlay in 3 minutes', with Microphone and optional Screen Context permissions both enabled">
+            </button>
+            <figcaption>Permissions: microphone, plus optional screen context</figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <button type="button" class="shot-btn" data-full="assets/setup-languages.jpg" aria-label="Enlarge: language picker">
+              <img src="assets/setup-languages.jpg" loading="lazy" width="800" height="896" alt="Overlay language picker asking 'Which languages do you speak?' with English and Hindi selected">
+            </button>
+            <figcaption>Pick your languages, like English and Hindi</figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <button type="button" class="shot-btn" data-full="assets/setup-assistant.jpg" aria-label="Enlarge: assistant setup">
+              <img src="assets/setup-assistant.jpg" loading="lazy" width="800" height="896" alt="Overlay Assistant setup screen showing an example: a spoken request to draft an email turned into a written message">
+            </button>
+            <figcaption>Assistant setup: speak a request, get the result</figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <button type="button" class="shot-btn" data-full="assets/setup-local-models.jpg" aria-label="Enlarge: local models">
+              <img src="assets/setup-local-models.jpg" loading="lazy" width="800" height="896" alt="Overlay 'Set up local models' screen listing Whisper models Tiny (75 MB), Base (142 MB, recommended and selected) and Small">
+            </button>
+            <figcaption>Choose a local Whisper model to run on your PC</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick start -->
+    <section class="section" id="start">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <h2>Install on Windows</h2>
+          <p>No Git or Node.js needed. Download the installer, run it, then open Overlay from the Start menu.</p>
+        </div>
+        <div class="cta reveal" style="margin-bottom:1.25rem">
+          <a class="btn btn-primary" href="https://github.com/ridhamjain28/Overlay-public/releases/download/v0.1.0/Overlay-Setup-0.1.0.exe">Download Overlay Setup 0.1.0</a>
+          <a class="btn btn-secondary" href="https://github.com/ridhamjain28/Overlay-public/releases" target="_blank" rel="noopener">All releases</a>
+        </div>
+        <div class="code-block reveal">
+          <div class="code-head">
+            <span>One-line install (PowerShell)</span>
+            <button type="button" class="copy-btn" data-copy-target="quickstart-code">Copy</button>
+          </div>
+<pre><code id="quickstart-code">irm https://ridhamjain28.github.io/Overlay-public/install.ps1 | iex</code></pre>
+        </div>
+        <p class="note reveal">The installer is not code-signed yet. Windows SmartScreen may warn you — click <strong>More info</strong>, then <strong>Run anyway</strong>. On first launch, allow the microphone, choose your languages, and set your two hotkeys. Source code stays private; this site is downloads only.</p>
+        <p class="sr-only" role="status" aria-live="polite" id="copy-status"></p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section alt" id="faq">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <h2>FAQ</h2>
+        </div>
+        <div class="faq">
+          <details class="reveal">
+            <summary>Is it free?</summary>
+            <p>Yes. Overlay is open source under the MIT license and costs nothing. Every answer source it supports has a free option. Some online services (like Gemini or Tavily) need your own free API key and have their own usage limits.</p>
+          </details>
+          <details class="reveal">
+            <summary>Does it work offline?</summary>
+            <p>Dictation does: speech-to-text runs on your PC with local Whisper once the model is downloaded. The assistant also works offline with a local Ollama model. Web search answers and the online sources (Gemini, Tavily) need an internet connection.</p>
+          </details>
+          <details class="reveal">
+            <summary>Is it Windows only?</summary>
+            <p>Yes, for now. Overlay is built and tested on Windows. Hotkeys use tap-to-toggle mode (tap to start, tap again to stop).</p>
+          </details>
+          <details class="reveal">
+            <summary>Is it a fork?</summary>
+            <p>Yes. Overlay is built on <a href="https://github.com/OpenWhispr/openwhispr" target="_blank" rel="noopener">OpenWhispr</a> (MIT, Gizmo Labs Inc.). The original license and credit are kept. Overlay adds the assistant overlay with web search and sources, the selectable answer sources, safe PC actions, Hinglish support, and a new maroon look.</p>
+          </details>
+          <details class="reveal">
+            <summary>Where does my voice go?</summary>
+            <p>For dictation, your audio is turned into text on your own PC. If you pick an online answer source for the assistant, your question is sent to that service.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container cta-inner reveal">
+        <h2>Try it and tell me what to improve</h2>
+        <p>Overlay is a young project. Download it, try it on your PC, and tell Ridham what to fix.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://github.com/ridhamjain28/Overlay-public/releases/download/v0.1.0/Overlay-Setup-0.1.0.exe">Download for Windows</a>
+          <a class="btn btn-secondary" href="https://github.com/ridhamjain28/Overlay-public/releases" target="_blank" rel="noopener">Releases</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand small">
+        <img src="assets/logo.svg" alt="" width="24" height="24">
+        <span>Overlay</span>
+      </div>
+      <p>Made by Ridham Jain. Released under the <a href="https://github.com/ridhamjain28/Overlay-public/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>.</p>
+      <p>Built on <a href="https://github.com/OpenWhispr/openwhispr" target="_blank" rel="noopener">OpenWhispr</a> (MIT, Gizmo Labs Inc.).</p>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+    <img src="assets/setup-welcome.jpg" alt="">
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

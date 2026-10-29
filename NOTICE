@@ -1,0 +1,10 @@
+Overlay
+Copyright (c) 2026 Ridham Jain
+
+Overlay is based on OpenWhispr (https://github.com/OpenWhispr/openwhispr),
+MIT License, Copyright (c) 2024 OpenWhispr Team (Gizmo Labs Inc. and contributors).
+Imported from upstream commit 1e9f243de413410b136765119ae544127bf88f2f.
+
+The full MIT license text, which covers both the original code and the
+Overlay changes, is in LICENSE. Third-party components bundled or downloaded
+by the app keep their own licenses.

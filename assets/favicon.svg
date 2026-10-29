@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Overlay logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9b1f38"/>
+      <stop offset="1" stop-color="#6a0f20"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#g)"/>
+  <rect x="20" y="52" width="9" height="20" rx="4.5" fill="#d9a3ad"/>
+  <rect x="33" y="40" width="10" height="44" rx="5" fill="#f1dfe2"/>
+  <path d="M51 48a10 10 0 0 1 10-10h37a10 10 0 0 1 10 10v28a10 10 0 0 1-10 10H66L51 99z" fill="#fbf2f0"/>
+  <rect x="63" y="51" width="34" height="7" rx="3.5" fill="#86001c"/>
+  <rect x="63" y="65" width="20" height="7" rx="3.5" fill="#c27a88"/>
+  <rect x="88" y="62" width="5" height="14" rx="2.5" fill="#86001c"/>
+</svg>
